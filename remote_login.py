@@ -29,9 +29,3 @@ def uptime():
     stdin,stdout,stderr = ssh_client.exec_command("uptime -p \n")
     return stdout.read().decode()
 
-connect("127.0.0.1","22","wgz","wgz")
-# print(uptime())
-# print(free_mem())
-# print(Load_avg())
-# print(routing())
-disconnect()
